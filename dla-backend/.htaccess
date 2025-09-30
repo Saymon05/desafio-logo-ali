@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteBase /desafio-logo-ali/
+
+# Reescreve URLs amigáveis com parâmetros
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^api/([^/]+)/([^/]*)$ /desafio-logo-ali/api/index.php?route=$1&id=$2 [L,QSA]
+
+# Reescreve URLs amigáveis sem parâmetros
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^api/([^/]+)$ /desafio-logo-ali/api/index.php?route=$1 [L,QSA]

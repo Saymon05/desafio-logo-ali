@@ -1,0 +1,101 @@
+.form {
+  width: 100%;
+  max-width: 420px;
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 40px 35px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form h1 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+  color: #001730;
+}
+
+.form p {
+  color: #6b7280;
+  font-size: 14px;
+  margin: 0px 0 20px;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.inputBox h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.inputBox input {
+  border: 1px solid #d1d5db;
+  outline: none;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.inputBox input:focus {
+  border-color: #0054ff;
+  box-shadow: 0 0 0 3px rgba(0, 84, 255, 0.15);
+}
+
+.submitButton {
+  width: 100%;
+  background-color: #0054ff;
+  color: #fff;
+  padding: 14px;
+  border: 0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.submitButton:hover {
+  background-color: #0040c9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 84, 255, 0.3);
+}
+
+.inputBox select {
+  border: 1px solid #d1d5db; /* mesma borda do input */
+  outline: none;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #374151;
+  appearance: none;        /* remove o caret padrão */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%236b7280' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.inputBox select:focus {
+  border-color: #0054ff;
+  box-shadow: 0 0 0 3px rgba(0, 84, 255, 0.15);
+}

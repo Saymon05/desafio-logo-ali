@@ -1,0 +1,147 @@
+Url: http://localhost/api-gestao-academia/api/
+
+*Para testar a API faça uma requisição para a rota usando o método GET:
+  -> http://localhost/api-gestao-academia/api/ping
+
+
+
+
+USUÁRIOS
+  Ação: Autentica usuário
+  Rota: /auth
+  Method: POST
+  Parametros: email e password
+
+  Ação: Pegar todos os usuários
+  Rota: /getusers
+  Method: GET
+  Parametros: Nenhum
+
+  Ação: Pegar usuário específico
+  Rota: /getuser/1
+  Method: GET
+  Parametros: Apenas id como mostrado ai em ROTA
+
+  Ação: Inserir novo usuário
+  Rota: /insertuser
+  Method: POST
+  Parametros: nome, email, password
+
+  Ação: Editar um usuário
+  Rota: /updateuser
+  Method: PUT
+  Parametros: id, nome, email, password (Só envia o que for editar, apenas o id é obrigatório)
+    
+  Ação: Deletar um usuário
+  Rota: /deleteuser/1
+  Method: DELETE
+  Parametros: id passado na url como mostrado ai em ROTA
+
+
+
+ALUNOS
+  Ação: Pegar todos os alunos
+  Rota: /getalunos
+  Method: GET
+  Parametros: Nenhum
+
+  Ação: Pegar aluno específico
+  Rota: /getaluno/1
+  Method: GET
+  Parametros: id passado na url como mostrado ai em ROTA
+
+  Ação: Inserir novo aluno
+  Rota: /insertaluno
+  Method: POST
+  Parametros: nome, email, data_nasc e plano_id
+
+  Ação: Editar um aluno
+  Rota: /updatealuno
+  Method: PUT
+  Parametros: id, nome, email, data_nasc e plano_id (Só envia o que for editar, apenas o id é obrigatório)
+
+  Ação: Deletar um aluno
+  Rota: /deletealuno/4
+  Method: DELETE
+  Parametros: id passado na url como mostrado ai em ROTA
+
+
+TREINADORES
+  Ação: Pegar todos os treinadores
+  Rota: /gettreinadores
+  Method: GET
+  Parametros: Nenhum
+
+  Ação: Pegar treinador específico
+  Rota: /gettreinador/1
+  Method: GET
+  Parametros: Nenhum
+
+  Ação: Insere um novo treinador
+  Rota: /inserttreinador
+  Method: POST
+  Parametros: nome, email, data_nasc e data_inicio
+
+  Ação: Edita um treinador
+  Rota: /updatetreinador
+  Method: PUT
+  Parametros: id, nome, email, data_nasc e data_inicio (Só envia o que for editar, apenas o id é obrigatório)
+
+  Ação: Deletar um treinador
+  Rota: /deletetreinador/1
+  Method: DELETE
+  Parametros: id passado na url como mostrado ai em ROTA
+
+
+PLANOS
+  Ação: Pegar todos os planos
+  Rota: /getplanos
+  Method: GET
+  Parametros: Nenhum
+
+  Ação: Pegar plano específico
+  Rota: /getplano/1
+  Method: GET
+  Parametros: Nenhum
+
+  Ação: Insere um novo plano
+  Rota: /insertplano
+  Method: POST
+  Parametros: nome, descricao e preco
+
+  Ação: Edita um plano
+  Rota: /updateplano
+  Method: PUT
+  Parametros: id, nome, descricao e preco (Só envia o que for editar, apenas o id é obrigatório)
+
+  Ação: Deleta um plano
+  Rota: /deleteplano/1
+  Method: DELETE
+  Parametros: id passado na url como mostrado ai em ROTA
+
+
+FORNECEDORES
+  Ação: Pegar todos os fornecedores
+  Rota: /getfornecedores
+  Method: GET
+  Parametros: Nenhum
+
+  Ação: Pegar fornecedor específico
+  Rota: /getfornecedor/1
+  Method: GET
+  Parametros: Nenhum
+
+  Ação: Insere novo fornecedor
+  Rota: /insertfornecedor
+  Method: POST
+  Parametros: nome, rua, bairro e telefone
+
+  Ação: Atualiza fornecedor
+  Rota: /updatefornecedor
+  Method: PUT
+  Parametros: id, nome, rua, bairro e telefone (Só envia o que for editar, apenas o id é obrigatório)
+
+  Ação: Deleta fornecedor
+  Rota: /deletefornecedor/2
+  Method: DELETE
+  Parametros: id passado na url como mostrado ai em ROTA

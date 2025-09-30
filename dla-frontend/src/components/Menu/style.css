@@ -1,0 +1,71 @@
+.optionBox {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap; /* permite que os itens quebrem linha em telas pequenas */
+  margin: 10px 0;
+}
+
+.optionBox__optionSingle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #000000;
+  padding: 12px 60px;
+  min-width: 150px; /* garante que não fique muito pequeno */
+  border: 0;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.optionSingle-selected,
+.optionBox__optionSingle:hover {
+  background-color: #0054ff;
+  color: #fff;
+}
+
+.logoutButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  padding: 12px 60px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.logoutButton:hover {
+  background-color: #ff4d4d;
+  color: #fff;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .optionBox__optionSingle {
+    padding: 10px 20px;
+    font-size: 14px;
+    flex: 1 1 45%; /* ocupa metade da linha em telas médias */
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .optionBox {
+    flex-direction: column; /* vertical em telas pequenas */
+    align-items: center;
+  }
+
+  .optionBox__optionSingle {
+    width: 80%; /* ocupa a maior parte da tela */
+    padding: 10px 0;
+    font-size: 14px;
+  }
+}
