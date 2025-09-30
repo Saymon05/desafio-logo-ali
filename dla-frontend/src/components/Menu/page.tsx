@@ -26,7 +26,7 @@ export default function Menu({ selected }: Props) {
         Estabelecimentos
       </Link>
 
-      {/* Botão de logout discreto */}
+      {/* Botão de logout*/}
       <button 
         onClick={() => {
         const confirmed = window.confirm("Tem certeza que deseja sair?");
